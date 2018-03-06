@@ -5,11 +5,7 @@
     font-style: normal;
 }
 #container{
-    position: relative;
     background: #FFFFFF;
-    width: 10rem;
-    height: 16rem ;
-    background-size:cover;
 }
 #choice{
     /*background: url(../images/sheep.gif);*/
