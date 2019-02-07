@@ -1,50 +1,16 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>给你选择</title>
-    <script type="text/javascript">
-        var cssEl = document.createElement('style');
-        document.documentElement.firstElementChild.appendChild(cssEl);
-        function setPxPerRem(){
-            var dpr = 1;
-            //把viewport分成10份的rem，html标签的font-size设置为1rem的大小;
-            var pxPerRem = document.documentElement.clientWidth * dpr / 10;
-            cssEl.innerHTML = 'html{font-size:' + pxPerRem + 'px!important;}';
-        }
-        setPxPerRem();
-    </script>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-
-</head>
-<body>
-<div id="container" ></div>
-<div id="choice">？</div>
-<div id="start">开始选择</div>
-
-
-</body>
-<script>
-    var start=false
-    function set() {
-        var random=Math.random()
-        if(random>0.5){
-            document.getElementById("choice").textContent="正"
-        }else{
-            document.getElementById("choice").textContent="反"
-        }
-    }
-    document.getElementById("start").onclick = function () {
-        if(!start){
-            document.getElementById("start").textContent="再来一次"
-            start=true
-        }
-
-        var t=setInterval(set,3)
-        setTimeout(function(){
-            clearTimeout(t)
-        },2000)
-    };
-
-</script>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>给你选择</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="(min-width: 569px)" href="css/main.css">
+        <link rel="stylesheet" media="(max-width: 568px)" href="css/main_mobile.css">
+    </head>
+    <body>
+        <div id="choice">?</div>
+        <div id="start">开始选择</div>
+        <script src="js/main.js"></script>
+    </body>
 </html>

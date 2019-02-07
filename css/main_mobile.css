@@ -10,19 +10,19 @@
 #choice { 
     font-family: new;
     color: #e89c69; 
-    font-size: 300px;  
+    font-size: 200px;  
     text-align: center;
-    margin: 25px auto 30px auto;
-    width: 450px;
+    margin: 120px auto 120px auto;
+    width: 230px; 
 }
 
 #start {   
     font-family: new;
-    border: solid #b2b1b1 10px;
+    border: solid #b2b1b1 4px;
     color: #e89c69;
-    width: 450px; 
-    margin: 20px auto 20px auto;
+    width: 230px; 
+    margin: 10px auto 10px auto;
     text-align: center;
-    font-size: 100px; 
-    padding: 10px;
+    font-size: 40px; 
+    padding: 10px; 
 }
