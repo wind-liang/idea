@@ -1,2 +1,2 @@
 # idea
-[在线体验地址](http://idea.windliang.cc)
+[在线体验地址](http://idea.windliang.wang)
